@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-const API = "https://https-github-com-monukushawaha987.onrender.com";
+const API = "https://tictocbackend.onrender.com/api/auth";
 
 export default function AuthModal({ open, setOpen, mode, onAuth }){
   const [name, setName] = useState('')

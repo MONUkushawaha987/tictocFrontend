@@ -3,7 +3,7 @@ import Board from "../components/Board";
 import RoundSummary from "../components/RoundSummary";
 import axios from "axios";
 
-const API ="https://https-github-com-monukushawaha987.onrender.com/api/auth";
+const API ="https://tictocbackend.onrender.com/api/auth";
 
 const computeWinner = (squares) => {
   const lines = [
