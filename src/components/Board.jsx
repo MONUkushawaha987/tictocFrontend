@@ -1,24 +1,12 @@
-import React from 'react';
-import Square from './Square';
+import React from 'react'
+import Square from './Square'
 
-const Board = ({ squares, onClick }) => {
-  const renderSquare = (i) => {
-    return <Square value={squares[i]} onClick={() => onClick(i)} />;
-  };
-
+export default function Board({ board, onPlay }){
   return (
-    <div className="board">
-      <div className="board-row">
-        {renderSquare(0)}{renderSquare(1)}{renderSquare(2)}
-      </div>
-      <div className="board-row">
-        {renderSquare(3)}{renderSquare(4)}{renderSquare(5)}
-      </div>
-      <div className="board-row">
-        {renderSquare(6)}{renderSquare(7)}{renderSquare(8)}
-      </div>
+    <div className="grid grid-cols-3 gap-2">
+      {board.map((v,i)=> (
+        <Square key={i} value={v} onClick={() => onPlay(i)} />
+      ))}
     </div>
-  );
-};
-
-export default Board;
+  )
+}
