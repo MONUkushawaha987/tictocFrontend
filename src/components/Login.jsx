@@ -12,7 +12,7 @@ const Login = ({ onLoginSuccess }) => {
     setIsSuccess(false);
     
     try {
-      const response = await fetch('https://https-github-com-monukushawaha987.onrender.com/api/login', { 
+      const response = await fetch('https://tictocbackend.onrender.com/api/login', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
